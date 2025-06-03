@@ -28,6 +28,18 @@ According to the World Health Organization, heart disease is responsible for an 
 * ⚖️ Imbalanced-learn
 * 📓 Jupyter Notebook
 
+## 📦 Setup and Usage
+
+1.  **Clone the repository.**
+2.  **Ensure you have Python installed.**
+3.  **Install necessary libraries:**
+    ```bash
+    pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn jupyter
+    ```
+4.  **Open and run the Jupyter Notebook:**
+    * `cardio.ipynb` contains all the analysis.
+5.  **Data:** The `train.csv` should be in the same directory or an appropriate path specified in the notebook.
+
 ## 💾 Dataset
 
 The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.com/datasets/christofel04/cardiovascular-study-dataset-predict-heart-disea)) containing various demographic, behavioral, and medical features of individuals. These features include:
@@ -77,17 +89,6 @@ The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.
 * **Protective Factors:** Higher levels of `education` were associated with lower odds of CHD.
 * **Discussion:** The model shows a good ability to identify a majority of CHD cases (high recall), which is crucial in a clinical context. However, the precision is modest, indicating a fair number of false positives.
 
-## 🚀 How to Use/Run
-
-1.  **Clone the repository.**
-2.  **Ensure you have Python installed.**
-3.  **Install necessary libraries:**
-    ```bash
-    pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn jupyter
-    ```
-4.  **Open and run the Jupyter Notebook:**
-    * `cardio.ipynb` contains all the analysis.
-5.  **Data:** The `train.csv` should be in the same directory or an appropriate path specified in the notebook.
 
 ## ⚠️ Limitations
 
