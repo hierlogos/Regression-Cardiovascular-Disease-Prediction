@@ -124,4 +124,4 @@ This project successfully developed a regularized logistic regression model with
 ## 👤 Author
 
 * Laisvis Remeikis
-* 🔗 [LinkedIn](https://www.linkedin.com/in/laisvis-remeikis-853573171/)
+* 🔗 [LinkedIn](https://www.linkedin.com/in/laisvis-remeikis/)
