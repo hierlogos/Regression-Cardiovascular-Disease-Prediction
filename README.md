@@ -1,10 +1,10 @@
 # Regression: Cardiovascular Disease Prediction
 
-## ℹ️ Introduction
+## Introduction
 
 According to the World Health Organization, heart disease is responsible for an estimated 12 million deaths globally each year. In the US and other developed countries, cardiovascular diseases accounts for nearly half of all deaths. Early detection and prognosis of these conditions can play a critical role in guiding lifestyle changes for high-risk individuals in order to prevent complications. This project aims to identify the most significant risk factors contributing to coronary heart disease (CHD) and predict overall risk using logistic regression analysis.
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Data Exploration and Understanding
 
@@ -18,17 +18,17 @@ According to the World Health Organization, heart disease is responsible for an 
 
 - Reporting and Presentation
 
-## 🛠️ Libraries Used
+## Libraries Used
 * ![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue)
-* 🐼 Pandas
-* 🔢 NumPy
-* 📊 Matplotlib
-* 🎨 Seaborn
-* 🤖 Scikit-learn
-* ⚖️ Imbalanced-learn
-* 📓 Jupyter Notebook
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Imbalanced-learn
+* Jupyter Notebook
 
-## 📦 Setup and Usage
+## Setup and Usage
 
 1.  **Clone the repository.**
 2.  **Ensure you have Python installed.**
@@ -40,7 +40,7 @@ According to the World Health Organization, heart disease is responsible for an 
     * `cardio.ipynb` contains all the analysis.
 5.  **Data:** The `train.csv` should be in the same directory or an appropriate path specified in the notebook.
 
-## 💾 Dataset
+## Dataset
 
 The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.com/datasets/christofel04/cardiovascular-study-dataset-predict-heart-disea)) containing various demographic, behavioral, and medical features of individuals. These features include:
 * **Demographic:** `age`, `sex`, `education`
@@ -49,7 +49,7 @@ The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.
 * **Physical Examination:** `totChol` (total cholesterol), `sysBP` (systolic blood pressure), `diaBP` (diastolic blood pressure), `BMI` (Body Mass Index), `heartRate`, `glucose`
 * **Target Variable:** `TenYearCHD` (binary: 0 for no CHD in 10 years, 1 for CHD in 10 years)
 
-## ⚙️ Project Workflow
+## Project Workflow
 
 1.  **Introduction:** Outlines project objectives and data.
 2.  **Data Cleaning:** Initial data loading, inspection, handling of irrelevant columns, check for duplicates and initial assessment of missing values.
@@ -76,7 +76,7 @@ The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.
     * Coefficients and Odds Ratios from the final logistic regression model were extracted and analyzed to understand the impact of each predictor on CHD risk.
 8.  **Conclusion:** Actionable insights, limitations of the model and further improvements.
 
-## 📊 Key Results & Insights
+## Key Results & Insights
 
 * The EDA confirmed class imbalance (~15% CHD cases) and identified key relationships and data characteristics.
 * The final Logistic Regression model, after SMOTE (k=4) and C-parameter tuning (C=0.01), achieved the following approximate performance on the test set at an optimal threshold of **0.4687**:
@@ -90,7 +90,7 @@ The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.
 * **Discussion:** The model shows a good ability to identify a majority of CHD cases (high recall), which is crucial in a clinical context. However, the precision is modest, indicating a fair number of false positives.
 
 
-## ⚠️ Limitations
+## Limitations
 
 1. **Correlation vs. Causation**: This model identifies statistical links between predictors and CHD risk. However, these associations do not necessarily imply causal relationships.
 
@@ -107,7 +107,7 @@ The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.
 
 5. **Model Simplicity**: Logistic regression is a linear model, which may not capture complex non-linear relationships between features.
 
-## 💡 Further Improvements
+## Further Improvements
 
 - **Data Enrichment**: If possible, incorporating more data with relevant features known to be associated with increased CHD risk could significantly enhance predictive power.
 
@@ -116,7 +116,7 @@ The analysis is based on a dataset (source: [Kaggle Dataset](https://www.kaggle.
 - **Other Models**: Exploring non-linear models could capture more complex relationships and lead to improved performance metrics.
 
 
-## 🏁 Conclusion Summary
+## Conclusion Summary
 
 This project successfully developed a regularized logistic regression model with SMOTE for 10-year CHD risk prediction. Key risk factors were identified, and the model was optimized to achieve high recall, acknowledging the trade-off with precision. While the model provides useful insights and fair discriminative ability, its practical application would require careful consideration of its false positive rate.
 
